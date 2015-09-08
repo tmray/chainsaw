@@ -11,14 +11,14 @@
     <title><data:blog.pageTitle/></title>
     <b:skin>
      <![CDATA[
-      body {
+      /*body {
        font: $(body.font);
        color: $(body.text.color);
        background: $(body.background);
        padding: 0 $(content.shadow.spread) $(content.shadow.spread) $(content.shadow.spread);
        $(body.background.override) margin: 0;
        padding: 0;
-      }
+      }*/
      ]]>
     </b:skin>
   </head>
