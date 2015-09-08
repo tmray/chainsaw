@@ -10,7 +10,7 @@
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
     <b:skin>
-     <![CDATA[/*
+     <![CDATA[
       body {
        font: $(body.font);
        color: $(body.text.color);
