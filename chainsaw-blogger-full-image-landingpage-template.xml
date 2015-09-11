@@ -26,7 +26,7 @@
 
     	#blur {
     		position: fixed;
-    		background-image: url(http://theme.dima-lab.com/okab/images/landing-page-iphone/blurred-home-bg.jpg);
+    		background-image: url(https://lh3.googleusercontent.com/GLPQDRelG0BvuzbNDKH5bXQD7TCtvDvCbmGqwfDFRkECSNFT7fs8M7Kntarxps1ExX9drkzwjQ7FCIoq3uQyzwlQm7ZAGxe_ZflTlnN57YZ9vYVSOd51r1jq7iJA_CQCaZuQ3G-Ljh7EQuJUcP0EsDMqJ8Y3at3saZwZFFrPlPJ1qgrgAdVLtc3AOYlF22Hz9-ITqKntpFnDmm1NppIubDjtjE8W_Z1kIzlwVoq-nQtg2r0wot_SKOSDFD49DlOtwpObYP9z_8mk3iMwm4BvtCrfuvBa__-4Ji0P6EOge3lGSDY1nSJ0cnQdQ_T1Lye6A68jnVrWrcmClKtEZKR0SeivQ2Mzzcu4xQf22TZCc8npy9fZv1Xw7tNrfVjHEK-5T9FMHGXwJmckAymnpMHZcH4UVfKA29k6re0FwMSB2yKWfpSqd2LzalGHTQP-z-HX_SHvSeut3HXqBg7NJgu2x1J4rRpyjowlhEOHPBQRLq-EaUWqyR5bhcLGNrcmJ2-MEK5UaJde4yKCtkwOlqoIafIwW7KdOxFOzDOHrFw01cTd=s1920-no);
     		-webkit-background-size: cover;
     		-moz-background-size: cover;
     		-o-background-size: cover;
