@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+    <b:if cond='data:blog.isMobile'>
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
+    <b:else/>
+      <meta content='width=1100' name='viewport'/>
+    </b:if>
+    <b:include data='blog' name='all-head-content'/>
+    <title><data:blog.pageTitle/></title>
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css"/>
+
+    <!-- custom css -->
+    <style>
+    	body {
+    		margin: 0;
+    		font-family: 'Arvo', serif;
+    		background:#000 url('bg.png') repeat;
+    		color: #fff;
+    		line-height: 30px;
+    		text-align: center;
+    	}
+
+    	#blur {
+    		position: fixed;
+    		background-image: url(http://theme.dima-lab.com/okab/images/landing-page-iphone/blurred-home-bg.jpg);
+    		-webkit-background-size: cover;
+    		-moz-background-size: cover;
+    		-o-background-size: cover;
+    		background-size: cover;
+    		background-repeat: no-repeat;
+    		width: 110%;
+    		height: 110%;
+    		top: -5%;
+    		left: -5%;
+    		-webkit-filter: blur(2px);
+    		-moz-filter: blur(2px);
+    		-o-filter: blur(2px);
+    		-ms-filter: blur(2px);
+    		filter: blur(2px);
+    	}
+
+    	#copyright {
+    		bottom: 0;
+    		right: 0;
+    		white-space: nowrap;
+    		overflow: hidden;
+    		width: 350px;
+    		text-overflow:ellipsis;
+    		position: fixed;
+    		margin: 0 auto;
+    		padding-top: 100px;
+    		opacity: 0.3;
+    	}
+
+    	h1 {
+    		line-height: 45px;
+    		font-size: 48px;
+    	}
+    	h4 {
+    		margin-bottom: 80px;
+    		margin-top: -25px;
+    		font-weight: normal;
+    		font-size: 23px;
+    	}
+    	#brief {
+    		line-height: 22px;
+    		width: 65%;
+    		text-align: left;
+    		padding-top: 20px;
+    		text-shadow:0px 1px 2px #000;
+    		margin: 0 auto;
+    		opacity: 0.8;
+
+    	}
+    	.credits {
+    	line-height: 22px;
+    		width: 65%;
+    		padding-top: 20px;
+    		text-shadow:0px 1px 2px #000;
+    		margin: 0 auto;
+    		opacity: 0.5;
+
+    	}
+    	.credits a {
+    	color:white;
+    	}
+    	#container {
+    		position: relative;
+    		padding-top: 20px;
+    		max-width: 900px;
+    		width: 100%;
+    		margin: 0 auto;
+    	}
+
+    	@media (min-width: 400px) and (max-width: 768px) {
+    		form,#brief{
+    			width: 90% ;
+    		}
+    	}
+
+    	@media (min-width: 0) and (max-width: 400px) {
+    		form,#brief{
+    			width: 90% ;
+    		}
+
+    		#copyright {
+    			padding-top: 100px;
+    		}
+    	}
+    </style>
+
+    <b:skin>
+     <![CDATA[
+      /*body {
+       font: $(body.font);
+       color: $(body.text.color);
+       background: $(body.background);
+       padding: 0 $(content.shadow.spread) $(content.shadow.spread) $(content.shadow.spread);
+       $(body.background.override) margin: 0;
+       padding: 0;
+      }*/
+     ]]>
+    </b:skin>
+  </head>
+  <body>
+
+    <div id="blur"></div>
+    <div id="container">
+      <!-- Layout examples
+      <h1></h1>
+      <h4></h4>
+      <p id="brief"></p> -->
+
+      <!-- Blogger main section -->
+      <b:section class='main' id='main' showaddelement='yes'>
+        <!-- blogger posts -->
+        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+      </b:section>
+      <!-- /end Blogger main section -->
+
+      <p id="copyright">2015</p>
+      <p class="credits">Built using <a href="https://github.com/victorantos/Simple-landing-page" target="_blank">SimpleLandingPage</a> by <a href="http://victorantos.com" target="_blank" >victorantos</a></p>
+    </div>
+
+  </body>
+</html>
