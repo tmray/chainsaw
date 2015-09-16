@@ -2,7 +2,7 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
     <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
 
@@ -13,13 +13,19 @@
     <style>
     	body {
     		margin: 0;
-        font-family: 'Playfair Display', serif;
+        font-family: &#39;Playfair Display&#39;, serif;
     		background:#000;
     		color: #fff;
     		line-height: 30px;
     		text-align: center;
     	}
-
+      hr {
+        width: 100px;
+        margin-top: 40px;
+      }
+      /* === Background image === *
+       * You can change the `background-image:` url to switch the page image *
+       */
     	#blur {
     		position: fixed;
     		background-image: url(https://lh3.googleusercontent.com/GLPQDRelG0BvuzbNDKH5bXQD7TCtvDvCbmGqwfDFRkECSNFT7fs8M7Kntarxps1ExX9drkzwjQ7FCIoq3uQyzwlQm7ZAGxe_ZflTlnN57YZ9vYVSOd51r1jq7iJA_CQCaZuQ3G-Ljh7EQuJUcP0EsDMqJ8Y3at3saZwZFFrPlPJ1qgrgAdVLtc3AOYlF22Hz9-ITqKntpFnDmm1NppIubDjtjE8W_Z1kIzlwVoq-nQtg2r0wot_SKOSDFD49DlOtwpObYP9z_8mk3iMwm4BvtCrfuvBa__-4Ji0P6EOge3lGSDY1nSJ0cnQdQ_T1Lye6A68jnVrWrcmClKtEZKR0SeivQ2Mzzcu4xQf22TZCc8npy9fZv1Xw7tNrfVjHEK-5T9FMHGXwJmckAymnpMHZcH4UVfKA29k6re0FwMSB2yKWfpSqd2LzalGHTQP-z-HX_SHvSeut3HXqBg7NJgu2x1J4rRpyjowlhEOHPBQRLq-EaUWqyR5bhcLGNrcmJ2-MEK5UaJde4yKCtkwOlqoIafIwW7KdOxFOzDOHrFw01cTd=s1920-no);
@@ -30,8 +36,6 @@
     		background-repeat: no-repeat;
     		width: 110%;
     		height: 110%;
-    		/*top: -5%;
-    		left: -5%;*/
     		-webkit-filter: blur(2px);
     		-moz-filter: blur(2px);
     		-o-filter: blur(2px);
@@ -67,22 +71,63 @@
     		width: 65%;
     		text-align: left;
     		padding-top: 20px;
-    		text-shadow:0px 1px 2px #000;
     		margin: 0 auto;
     		opacity: 0.8;
-
     	}
+      /* === buy buttons === *
+       * Buy buttons arranged as list items
+       */
+      .list-inline {
+        padding-left: 0;
+        margin-left: -5px;
+        list-style: none;
+      }
+      .list-inline>li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+      .btn-group-lg>.btn, .btn-lg {
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.3333333;
+        border-radius: 6px;
+      }
+      .btn-default {
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+      }
+      .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+      }
     	.credits {
-    	line-height: 22px;
+    	  line-height: 22px;
     		width: 65%;
     		padding-top: 20px;
-    		text-shadow:0px 1px 2px #000;
     		margin: 0 auto;
     		opacity: 0.5;
-
     	}
     	.credits a {
-    	color:white;
+    	  color:white;
     	}
     	#container {
     		position: relative;
@@ -91,7 +136,9 @@
     		width: 100%;
     		margin: 0 auto;
     	}
-
+      /* === Mobile Adjustments === *
+       * Layouts needed for mobile devices *
+       */
     	@media (min-width: 400px) and (max-width: 768px) {
     		form,.brief{
     			width: 90% ;
@@ -106,6 +153,14 @@
     		#copyright {
     			padding-top: 100px;
     		}
+        .list-inline>li {
+          display: block;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        .btn {
+          width: 50%;
+        }
     	}
 
       /* Hide blogspot post links */
@@ -116,9 +171,9 @@
       }
     </style>
 
-    <b:skin>
-     <![CDATA[
-      /*body {
+    <b:skin><![CDATA[
+
+    /*body {
        font: $(body.font);
        color: $(body.text.color);
        background: $(body.background);
@@ -126,13 +181,24 @@
        $(body.background.override) margin: 0;
        padding: 0;
       }*/
-     ]]>
-    </b:skin>
+    ul {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .box {
+        float: left;
+        padding: 20px 20px 20px 0px;
+        margin: 0px;
+    }
+    .playlist.box {
+        padding-top: 0px;
+    }]]></b:skin>
   </head>
   <body>
 
-    <div id="blur"></div>
-    <div id="container">
+    <div id='blur'/>
+    <div id='container'>
       <!-- Layout examples
       <h1></h1>
       <h4></h4>
@@ -145,8 +211,6 @@
       </b:section>
       <!-- /end Blogger main section -->
 
-      <p id="copyright">2015</p>
-      <p class="credits">Built using <a href="https://github.com/tmray/chainsaw" target="_blank">Chainsaw</a> by <a href="https://twitter.com/tmray" target="_blank" >@tmray</a></p>
     </div>
 
   </body>
