@@ -211,6 +211,9 @@
       </b:section>
       <!-- /end Blogger main section -->
 
+      <p id="copyright">2015</p>
+-     <p class="credits">Built using <a href="https://github.com/tmray/chainsaw" target="_blank">Chainsaw</a> by <a href="https://twitter.com/tmray" target="_blank" >@tmray</a></p>
+
     </div>
 
   </body>
