@@ -32,7 +32,7 @@
     
     <!-- Blogger sidebar section -->
     <b:section class='sidebar' id='sidebar' preferred='yes'>
-			<!-- Sidebar's gadgets and widgets code -->
+			<!-- Sidebar gadgets and widgets code -->
 			<b:widget id='Label1' locked='false' title='Labels' type='Label'/>
 		</b:section>
 		<!-- /end Blogger sidebar section -->
