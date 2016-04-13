@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
     <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
     <b:if cond='data:blog.isMobile'>
@@ -10,7 +11,8 @@
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
     <b:skin>
-     <![CDATA[
+      <![CDATA[
+
       /*body {
        font: $(body.font);
        color: $(body.text.color);
@@ -19,15 +21,20 @@
        $(body.background.override) margin: 0;
        padding: 0;
       }*/
-     ]]>
+
+      ]]>
     </b:skin>
+    <link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' rel='stylesheet'/>
   </head>
   <body>
+   <div class='container'>
     <!-- Blogger main section -->
     <b:section class='main' id='main' showaddelement='yes'>
-      <!-- blogger posts -->
-      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+		<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
     </b:section>
     <!-- /end Blogger main section -->
+  </div>
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'/>
+   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'/>
   </body>
 </html>
